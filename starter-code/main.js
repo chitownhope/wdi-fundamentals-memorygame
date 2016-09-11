@@ -1,4 +1,5 @@
 console.log("JS file is connected to HTML! Woo!")
+//this code has been tested and all seems well
 var cardOne = "queen";
 var cardTwo = "queen";
 var cardThree = "king";
