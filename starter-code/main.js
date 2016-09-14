@@ -5,12 +5,8 @@ var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
 /*not sure if i need EVERY possibility accounted for, but they are just in case*/
-if (cardOne === cardTwo){
-  message = "Great job! It's a match!";
-} else { 
-  message = "Sorry.  Not a match.  Try again!";  
- } 
 
+/*
 if (cardOne === cardThree){
   message = "Great job! It's a match!";
 } else {
@@ -41,38 +37,20 @@ if (cardTwo === cardFour){
   message = "Sorry.  Not a match.  Try again!";  
 }  
 
-if (cardThree === cardOne){
-  message = "Great job! It's a match!";
-} else {
-  message = "Sorry.  Not a match.  Try again!";  
-} 
-
-if (cardThree === cardTwo){
-  message = "Great job! It's a match!";
-} else {
-  message = "Sorry.  Not a match.  Try again!";  
-} 
-
 if (cardThree === cardFour){
   message = "Great job! It's a match!";
 } else {
   message = "Sorry.  Not a match.  Try again!";  
 }
+*/
 
-if (cardFour === cardOne){
-  message = "Great job! It's a match!";
-} else {
-  message = "Sorry.  Not a match.  Try again!";  
-} 
+var gameBoard=document.getElementById('game-board');
+function createBoard(){
+  for(var i=0;i<gameBoard.length;i++){
+    var newDiv=document.createElement('div');
+    newDiv[i].className='card';
+    div.appendChild(newDiv);
+  }
+}
 
-if (cardFour === cardTwo){
-  message = "Great job! It's a match!";
-} else {
-  message = "Sorry.  Not a match.  Try again!";  
-} 
 
-if (cardFour === cardThree){
-  message = "Great job! It's a match!";
-} else {
-  message = "Sorry.  Not a match.  Try again!";  
-} 
